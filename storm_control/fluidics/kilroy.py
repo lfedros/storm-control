@@ -12,6 +12,7 @@
 # Import
 # ----------------------------------------------------------------------------------------
 import sys
+sys.path.append(r'C:\Users\Fancifluid\Documents\Github\storm-control')
 import os
 import time
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -281,7 +282,8 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         parameters = params.parameters(sys.argv[1])
     else:
-        parameters = params.parameters("kilroy_settings_default.xml")
+        parameters = params.parameters(r"C:\Users\Fancifluid\Documents\Github\storm-control\storm_control\fluidics\kilroy_settings_default.xml")
+        # parameters = params.parameters("kilroy_settings_default.xml")
 
     # Create instance of StandAlone class
     window = StandAlone(parameters)
